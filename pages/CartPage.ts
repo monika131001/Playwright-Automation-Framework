@@ -22,9 +22,9 @@ class CartPage {
   constructor(page: Page) {
     this.page = page;
     this.heading_your_cart = page.locator(".title");
-    this.link_continue_shopping = page.getByRole("link", {name: "Continue Shopping",
+    this.link_continue_shopping = page.getByRole("button", {name: "Continue Shopping",
     });
-    this.link_checkout = page.getByRole("link", {name: "Checkout",
+    this.link_checkout = page.getByRole("button", {name: "Checkout",
     });
     this.text_QTY = page.locator(".cart_quantity_label");
     this.text_Description = page.locator(".cart_desc_label");

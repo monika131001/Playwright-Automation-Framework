@@ -32,15 +32,11 @@ test.describe("Cart", () => {
     // Verify the Page Title
     VerificationUtils.pageHasTitle(page, "Swag Labs");
 
-    VerificationUtils.elementIsVisible(
-      cartPage.link_continue_shopping,
-      "Cart: Continue Shopping link",
-    );
-    VerificationUtils.elementIsVisible(
-      cartPage.link_checkout,
-      "Cart: Checkout link",
-    );
+    // Verify Cart Action Buttons are visible
+    VerificationUtils.elementIsVisible(cartPage.link_continue_shopping, "Cart: Continue Shopping link");
+    VerificationUtils.elementIsVisible(cartPage.link_checkout, "Cart: Checkout link");
 
+    // Verify Cart Table Headers are displayed correctly
     VerificationUtils.elementHasText(cartPage.text_QTY, "QTY");
     VerificationUtils.elementHasText(cartPage.text_Description, "Description");
   });
