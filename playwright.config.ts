@@ -13,7 +13,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   // testDir: './tests',
-  testDir: './tests-saucedemo',
+  testDir: './tests',
 
   timeout: 60000, // Set the timeout to 60 seconds (in milliseconds)
   
