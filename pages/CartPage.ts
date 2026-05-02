@@ -6,14 +6,12 @@ import { Page, Locator } from "@playwright/test";
 class CartPage {
   // Elements
   private page: Page;
+  readonly cart_item: Locator;
   readonly heading_your_cart: Locator;
   readonly link_continue_shopping: Locator;
   readonly link_checkout: Locator;
   readonly text_QTY: Locator;
   readonly text_Description: Locator;
-
-
-
 
   /**
    * Initializes the CartPage instance with page elements.
@@ -21,6 +19,7 @@ class CartPage {
    */
   constructor(page: Page) {
     this.page = page;
+    this.cart_item = page.locator(".cart_item");
     this.heading_your_cart = page.locator(".title");
     this.link_continue_shopping = page.getByRole("button", {name: "Continue Shopping",
     });

@@ -22,8 +22,8 @@ class ProductsPage {
    */
   constructor(page: Page) {
     this.page = page;
-    this.heading_products = page.locator(".title");
     this.products = page.locator(".inventory_item");
+    this.heading_products = page.locator(".title");
     this.product_image = page.locator(".inventory_item_img");
     this.product_name = page.locator(".inventory_item_name");
     this.product_description = page.locator(".inventory_item_desc");
