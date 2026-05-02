@@ -7,7 +7,7 @@ class ProductsPage {
   private page: Page;
   readonly heading_products: Locator;
   readonly products: Locator;
-  readonly product_images: Locator;
+  readonly product_image: Locator;
   readonly product_name: Locator;
   readonly product_description: Locator;
   readonly product_price: Locator;
@@ -24,7 +24,7 @@ class ProductsPage {
     this.page = page;
     this.heading_products = page.locator(".title");
     this.products = page.locator(".inventory_item");
-    this.product_images = page.locator(".inventory_item_img");
+    this.product_image = page.locator(".inventory_item_img");
     this.product_name = page.locator(".inventory_item_name");
     this.product_description = page.locator(".inventory_item_desc");
     this.product_price = page.locator(".inventory_item_price");
