@@ -96,6 +96,13 @@ class Components {
         await basePage.clickOnWebElement(this.side_panel_link_about, "Side-Panel: About link");
     }
     
+    /**
+     * Clicks on the Reset App State link in the side-panel.
+     */
+    async click_side_panel_link_reset_app_state(): Promise<void> {
+        await basePage.clickOnWebElement(this.side_panel_link_resetAppState, "Side-Panel: Reset App State link");
+    }
+    
 }
 
 /**

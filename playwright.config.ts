@@ -15,7 +15,7 @@ export default defineConfig({
   // testDir: './tests',
   testDir: './tests',
 
-  timeout: 60000, // Set the timeout to 60 seconds (in milliseconds)
+  timeout: 50000, // Set the timeout to 60 seconds (in milliseconds)
   
   /* Run tests in files in parallel */
   fullyParallel: true,
