@@ -18,6 +18,9 @@ class CheckoutPage {
   readonly checkout_cancel: Locator;
   readonly checkout_continue: Locator;
 
+  //Checkout form error
+  readonly error: Locator;
+
   constructor(page: Page) {
     this.page = page;
     this.product_add_to_cart = page.locator(".btn_inventory");
@@ -29,6 +32,8 @@ class CheckoutPage {
 
     this.checkout_cancel = page.locator("#cancel");
     this.checkout_continue = page.locator("#continue");
+
+    this.error = page.locator("[data-test='error']");
   }
 }
 
