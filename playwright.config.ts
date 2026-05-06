@@ -39,14 +39,14 @@ export default defineConfig({
     // BASE_URL=https://www-prod.saucedemo.com npx playwright test
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    // trace: 'on-first-retry',
-    trace: 'on',
+    trace: 'on-first-retry',
+    // trace: 'on',
 
-    // video: 'retain-on-failure',
-    video: 'on',
+    video: 'retain-on-failure',
+    // video: 'on',
 
-    // screenshot: 'only-on-failure',
-    screenshot: 'on',
+    screenshot: 'only-on-failure',
+    // screenshot: 'on',
   },
 
   /* Configure projects for major browsers */
