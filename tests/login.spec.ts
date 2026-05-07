@@ -155,10 +155,17 @@ test.describe("[LOGIN]", () => {
   test("Verify user logout functionality", async ({ page }) => {
     const loginPage = new LoginPage(page);
     const basePage = new BasePage();
-    await loginPage.loginToApplicationWithValidCredentials();
     const components = new Components(page);
+
+    await loginPage.loginToApplicationWithValidCredentials();
+
+    // Click on side panel/hamburger menu icon
     await components.click_side_panel_icon_expand();
+
+    // Click on Logout option from side panel
     await basePage.clickOnWebElement(components.side_panel_link_logout, "Logout");
+
+    // Verify user is redirected to login page after logout
     await expect(page).toHaveURL("/");
   });
 });
