@@ -60,6 +60,6 @@ test.describe("Cart", () => {
 
     // Verify cart is empty and badge is reset
     await expect(cartPage.cart_item).toHaveCount(0);
-    await expect(cartPage.shopping_cart_badge).toHaveText("");
+    await expect(cartPage.shopping_cart_badge).toHaveCount(0);
   });
 });

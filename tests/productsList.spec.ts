@@ -41,7 +41,7 @@ test("Verify Add to Cart button changes to Remove", async ({ page }) => {
   for (let i = 0; i < count; i++) {
     await VerificationUtils.elementHasText(productsPage.product_add_to_cart.nth(i), `Add to cart`);
     await basePage.clickOnWebElement(productsPage.product_add_to_cart.nth(i), `Product Add to Cart [${i}]`);
-    await VerificationUtils.elementHasText(productsPage.product_add_to_cart.nth(i), `Remove [${i}]`);
+    await VerificationUtils.elementHasText(productsPage.product_add_to_cart.nth(i), `Remove`);
   }
 });
 
